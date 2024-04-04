@@ -3,19 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./bootstrap/css/bootstrap.css" rel="stylesheet">
+<script src="./bootstrap/js/bootstrap.js"></script>
     <title>Form</title>
+    <style>
+    .form{
+            background-image: url(image.avif);
+            background-size: cover;
+            color: white;
+            font-size: larger;
+            margin-top: 20px;
+            font-weight: bolder;
+        }
+    </style>
 </head>
-<body>
-    <form>
+<body class="form">
+    <!-- <form>
         <label for="username"> Name </label><br>
         <input type="text" name="username"><br>
         <label for="number">Contact Number</label><br>
         <input type="number" name="number"><br>
         <label for="mail">E-mail</label> <br>
         <input type="email" name="mail"><br>
+        <label for="Gender">Gender</label><br>
+        <input type="radio" name="Gender">Male</input>
+        <input type="radio" name="Gender">Female</input><br><br>
         <label for="Query">Query</label><br>
         <textarea name="Query" cols="30" rows="10" ></textarea>
+        <br><br>
+        <input type="submit" value="Submit" name="login"/>
+        <input type="reset" value="Clean" name="clean"/>
         
-    </form>
+    </form> -->
+    <form class="container col-md-6">
+        <div class="form-row">
+            <div class="col col-md-6">
+                <label for="inputFirstName">First name</label>
+                <input type="text" class="form-control" id="inputFirstName" placeholder="First name">
+              </div>
+              <div class="col col-md-6">
+                <label for="inputLastName">Last Name</label>
+                <input type="text" class="form-control" id="inputLastName" placeholder="Last name">
+              </div>
+              <div class="form-row" style="margin-top: 10px;">
+                <label for="Gender">Gender</label>
+                <div class="form-check">
+                <input class="form-check-input" type="radio" name="Gender" id="Male">
+                <label class="form-check-label" for="Male">
+                  Male
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="Gender" id="Female">
+                <label class="form-check-label" for="Female">
+                  Female
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="Gender" id="Others">
+                <label class="form-check-label" for="Others">
+                  Others
+                </label>
+              </div>
+              </div>
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">Email</label>
+            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputNumber">Number</label>
+            <input type="number" class="form-control" id="inputNumber" placeholder="Number">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputAddress">Address</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+        </div>
+        <div class="form-group">
+          <label for="inputAddress2">Address 2</label>
+          <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputCity">City</label>
+            <input type="text" class="form-control" id="inputCity">
+          </div>
+          <div class="form-group col-md-4">
+            <label for="inputState">State</label>
+            <input type="text" class="form-control" id="inputState">
+            </select>
+          </div>
+          <div class="form-group col-md-2">
+            <label for="inputZip">Zip</label>
+            <input type="text" class="form-control" id="inputZip">
+          </div>
+        </div>
+        <div class="input-group" style="margin-top: 10px;">
+            <span class="input-group-text">Query</span>
+            <textarea class="form-control" aria-label="With textarea"></textarea>
+          </div>
+        <div class="form-group" style="margin-top: 10px;">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              Check me out
+            </label>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-light" style="margin-top: 10px;font-size: larger;font-weight: bolder;">Submit</button>
+      </form>
 </body>
 </html>
